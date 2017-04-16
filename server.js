@@ -7,7 +7,7 @@ app.use(express.static(__dirname+'/build'));
 app.all('/*', function (req, res) {
     res.sendFile('index.html', {
         root: __dirname+'/build'
-    });
+    });//edit something
 });
 app.listen(port);
 console.log('server on port ' + port);
